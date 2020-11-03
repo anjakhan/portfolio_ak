@@ -110,12 +110,14 @@ li a {
 
 @media screen and (max-width: 1250px) {
 	.about-grid {
-		grid-template-columns: 500px;
+		grid-template-columns: auto;
 		grid-gap: 3rem;
 	}
 
 	.profile-pic {
-		margin: 0 50px;
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -311,6 +313,7 @@ li a {
 .skill-stars {
 	display: flex;
 	flex-direction: row;
+	padding-right: 80px;
 }
 
 .skill {
@@ -320,7 +323,6 @@ li a {
 }
 
 .stars {
-	padding-right: 80px;
 	line-height: 27px;
 	margin: 22px 0;
 }
@@ -331,7 +333,11 @@ li a {
 
 @media screen and (max-width: 800px) {
 	#skills {
-		padding: 50px;
+		padding: 30px;
+	}
+
+	.skill-stars {
+		padding-right: 50px;
 	}
 }
 
