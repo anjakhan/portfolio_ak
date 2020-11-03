@@ -274,6 +274,11 @@ li a {
 }
 
 @media screen and (max-width: 800px) {
+	#work {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	.project {
 		display: flex;
 		justify-content: center;
@@ -284,15 +289,15 @@ li a {
 	  	margin-left: auto;
 	  	margin-right: auto;
 	  	margin-bottom: 10px;
-		min-width: 65vw;
-		width: 65vw;
+		min-width: 70vw;
+		width: 70vw;
 		height: auto;
 	}
 
 	img {
   		margin-left: auto;
  	 	margin-right: auto;
-		width: 65vw;
+		width: 70vw;
 		height: auto;
 	}
 }
