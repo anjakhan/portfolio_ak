@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+  	<meta content="width=device-width,initial-scale=1" name="viewport">
+  	<meta name="google" content="notranslate" />
+
+  	<!-- <link href="./assets/favicon.ico" rel="icon"> -->
+
+	<title>Anja Khan</title>
+
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<div class='intro'>
+			hi! i'm <span>Anja Khan</span>, a berlin 
+			based environmental scientist turned 
+			<span>Fullstack Web Developer</span>
+			who loves the magic you can
+			make happen with <span>Code</span>.
+		</div>
+	</header>
+	
+	<ul>
+		<li style="float: left;"><a href="https://gatsbyblog-by-anjakhan.netlify.app/" target="_blank">Blog</a></li>
+	 	<li><a href='#contact'>contact</a></li>
+	 	<li><a href='#skills'>skills</a></li>
+	 	<li><a href='#work'>my work</a></li>
+	 	<li><a href='#about'>about</a></li>
+	</ul>
+	
+	<div id='about' class='about-grid'>
+		<div class='profile-pic'></div>
+		<div class='summary'>
+			I am an environmental scientist living in the suburbs of Berlin. Subsequent to my university studies I accomplished a GIS-Analyst course, where I gained my first coding experience. In the course of time, job search and aims to develop further I got into self-study in Fullstack Web Development. My main companion and road map to success was the Zero To Mastery Academy, in particular the <a href='https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/' target='_blank' style='color: #ff9945;'>"The Complete Web Developer in 2020: Zero to Mastery"</a> course by Andrei Neagoie. Along the way I got more and more passionate about coding. This passion made me keep learning beside my 40-hour workweek and following maternity time.
+
+			<!-- , which was my first step towards coding. In my first GIS-related job that I landed in 2017 I got firstly into databases and Microsoft SQL. My aim to develop myself continuously together with my interest in coding made me rethink my current career. Consequently, I am utilising my maternity time for self-study in Fullstack Web Development. -->
+			<br><br>
+			So far, I can confidently call myself a Frontend Developer knowing HTML5, CSS3 and JavaScript well. Besides I have a good understanding of React/Redux, Python and Node.js. Real life experience I achieved in working with Python, SQL (PostgreSQL, MS SQL), the above mentioned frontend languages as well as Leaflet.
+			Find more about my job history, courses and skills on <a href='https://linkedin.com/in/anja-khan' target='_blank' style='color: #ff9945;'>linkedIn</a>.
+		</div>
+	</div>
+
+	<div id='work'>
+		<h1 class='title'>- My Work -</h1>
+		<div class='work-container'>
+			<div class='project'>
+				<div class='slideshow-container slider' id='div1'>
+					<img class="mySlides fade" src='./assets/images/PE_map.jpg'>
+					<img class="mySlides fade" src='./assets/images/PE_website.jpg'>
+					<img class="mySlides fade" src='./assets/images/PE_selection.jpg'>
+					<img class="mySlides fade" src='./assets/images/PE_gemeinde.jpg'>
+					<img class="mySlides fade" src='./assets/images/PE_tree_search.jpg'>
+					
+					<a class="prev" onclick="plusDivs(this,-1)">&#10094;</a>
+					<a class="next" onclick="plusDivs(this,1)">&#10095;</a>
+				</div>
+				<div class='text-container'>
+					<h2>Suburban Green Design</h2>
+					<p>
+						Within the scope of the local Agenda21 in Petershagen / Eggersdorf (east of Brandenburg) an evaluation of suitable trees was done by the company IBE / ÖKO-DATA. As an employee responsible for ArcGIS and Database tasks I was asked to make an interactive map accessible for any citizen of Petershagen / Eggersdorf. I utilized HTML, CSS, JavaScript and Leaflet to put up the website as well as ArcGIS to create the map. As a result the citizens are now able to locate themselves or look up any other position on the map within the survey area and find out the best suitable trees and further site-specific information. A table including tree-specific details is also provided.
+					</p>
+					<span class='btn'>
+						<a href='https://ibe-gmbh.github.io/petershagen-eggersdorf/index.html' target='_blank'><i class='fas'>&#xf108;</i></a>
+					</span>
+				</div>
+				
+			</div>
+			<div class='project'>
+				<div class='slideshow-container slider' id='div2'>
+					<img class="mySlides fade" src='./assets/images/recipe_app.jpg'>
+					<img class="mySlides fade" src='./assets/images/recipe_sort.jpg'>
+					<img class="mySlides fade" src='./assets/images/recipe_search.jpg'>
+					<img class="mySlides fade" src='./assets/images/recipe_new.jpg'>
+					
+					<a class="prev" onclick="plusDivs(this,-1)">&#10094;</a>
+					<a class="next" onclick="plusDivs(this,1)">&#10095;</a>
+				</div>
+				<div class='text-container'>
+					<h2>Recipe App</h2>
+					<p>
+						The Recipe App I build based on the skills gained in <a href='https://www.udemy.com/course/modern-javascript/' target='_blank' style='color: #ff9945;'>"The Modern JavaScript Bootcamp"</a> course by Andrew Mead. The App was written with the languages HTML5, CSS3 and JavaScript. Additional tools used are Local Storage, Webpack and Babel. The final result of the project enables users to write and save recipes locally on their devices, sort these by the criterias "last edited", "recently created" and "alphabetically" and to have an approximate overview of available ingredients. Also a search box is included to filter the recipes by their title. Recipes can be edited, individually deleted or all together removed with the "Remove All Recipes" button in the Danger Zone.
+					</p>
+					<span class='btn'><a href='https://github.com/anjakhan/RecipeApp' target='_blank'><i class='fas'>&#xf121;</i></a></span>
+					<span class='btn'><a href='https://anjakhan.github.io/RecipeApp/index.html' target='_blank'><i class='fas'>&#xf108;</i></a></span>
+				</div>
+			</div>
+			<div class='project'>
+				<div class='slideshow-container slider' id='div3'>
+					<img class="mySlides fade" src='./assets/images/shop_crwn.jpg'>
+					<img class="mySlides fade" src='./assets/images/shop_hats.jpg'>
+					<img class="mySlides fade" src='./assets/images/shop_cart.jpg'>
+					<img class="mySlides fade" src='./assets/images/shop_checkout.jpg'>
+					<img class="mySlides fade" src='./assets/images/shop_signin.jpg'>
+					
+					<a class="prev" onclick="plusDivs(this,-1)">&#10094;</a>
+					<a class="next" onclick="plusDivs(this,1)">&#10095;</a>
+				</div>
+				<div class='text-container'>
+					<h2>CRWN-Clothing Shop</h2>
+					<p>
+						The CRWN-Clothing Shop is a full stack app (MERN stack) that I completed as part of the <a href='https://www.udemy.com/course/complete-react-developer-zero-to-mastery/' target='_blank' style='color: #ff9945;'>"Complete React Developer in 2021 (w/ Redux, Hooks, GraphQL)"</a> course by Andrei Neagoie. Throughout the course I built this e-commerce application using React, Redux, React Hooks, React Suspense, React Router, Firebase, Redux-Saga, Stripe and more. Users can sign up for a great shopping experience, shop through a variety of clothes, update their shopping cart, overlook their selected items in the shopping cart and buy their selection via Stripe Payment. The users and store items are stored in Firebase, whereas the user based selection is saved in the local storage. For signed in users the selection is also kept in Firebase.
+
+						<!-- Similarily created a cooking website with some of the tools used in the Crwn-clothing app. Contributed it to open source on github and still working on its finalization. -->
+					</p>
+					<span class='btn'><a href='https://github.com/anjakhan/crwn-clothing' target='_blank'><i class='fas'>&#xf121;</i></a></span>
+					<span class='btn'><a href='https://crwn-economy.herokuapp.com/' target='_blank'><i class='fas'>&#xf108;</i></a></span>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div id='skills'>
+		<h1 class='title' style='color: black;'>- My Skills -</h1>
+		<div class='skill-container'>
+			<div class='skill-stars'>
+				<p class='skill'>HTML5</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>CSS3</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>JavaScript</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>React</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>Redux</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>Node.js</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>Leaflet</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>Python</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+			<div class='skill-stars'>
+				<p class='skill'>SQL</p>
+				<p class='stars'>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star checked'></span>
+					<span class='fa fa-star'></span>
+				</p>
+			</div>
+		</div>
+		<div class='further-skills'>
+			<p>
+				<span style='font-weight: 800;'>Further skills:</span><br>
+				Responsive Design, Flexbox, CSS Grid, BootStrap, JSON, AJAX, RESTful API, jQuery, Firebase, React Hooks, Redux Saga, GraphQL, GatsbyJS, npm, yarn, Webpack, Babel, GitHub, Express.js, Vue.js, Visual Studio Code, Sublime, GIMP, ArcGIS, QGIS
+			</p>
+		</div>
+	</div>
+
+	<footer id='contact'>
+		<p>
+			<a href='https://linkedin.com/in/anja-khan' target='_blank'><i class='fa'>&#xf08c;</i></a>
+			<a href='https://github.com/anjakhan' target='_blank'><i class='fa'>&#xf09b;</i></a>
+			<a href='https://twitter.com/anja_khan90' target='_blank'><i class='fa'>&#xf081;</i></a>
+		</p>
+		<p>
+			<a href="mailto:anjakhan@gmx.de">anjakhan@gmx.de</a>
+		</p>
+		<p style='line-height: 40px;'>
+			&copy; 2020 Anja Khan
+		</p>
+	</footer>
+
+	<script type='text/javascript' src='script.js'></script>
+</body>
+</html>
