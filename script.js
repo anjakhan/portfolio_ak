@@ -1,9 +1,9 @@
-var sliderObjects = [];
+let sliderObjects = [];
 createSliderObjects();
 
 function plusDivs(obj, n) {
-  var parentDiv = $(obj).parent();
-  var matchedDiv;
+  let parentDiv = $(obj).parent();
+  let matchedDiv;
   $.each(sliderObjects, function(i, item) {
     if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
       matchedDiv = item;
@@ -15,9 +15,9 @@ function plusDivs(obj, n) {
 }
 
 function createSliderObjects() {
-  var sliderDivs = $('.slider');
+  let sliderDivs = $('.slider');
   $.each(sliderDivs, function(i, item) {
-    var obj = {};
+    let obj = {};
     obj.id = $(item).attr('id');
     obj.divContent = item;
     obj.slideIndex = 1;
@@ -29,7 +29,7 @@ function createSliderObjects() {
 
 function showDivs(divObject, n) {
   debugger;
-  var i;
+  let i;
   if (n > divObject.slideContents.length) {
     divObject.slideIndex = 1
   }
@@ -41,3 +41,33 @@ function showDivs(divObject, n) {
   }
   divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
 }
+
+
+// let img = document.querySelectorAll('img');
+
+// function changeImgWidth() {
+//   img.forEach(image => {
+//     if (window.innerWidth < 800) {
+//       let project = document.querySelector('.project');
+//       let imgWidth = project.clientWidth*0.85;
+//       image.width = imgWidth
+//       console.log(image.width, imgWidth)
+//     }
+//   })
+// }
+
+// let slideContainer = document.querySelectorAll('.slideshow-container')
+
+// function changeSliderWidth() {
+//   slideContainer.forEach(slider => {
+//     if (window.innerWidth < 800) {
+//       let project = document.querySelector('.project');
+//       let imgWidth = project.clientWidth*0.85;
+//       slider.width = imgWidth
+//       console.log(slider.width, imgWidth)
+//     }
+//   })
+// }
+
+// document.querySelector('.project').addEventListener('change', changeImgWidth);
+// window.onload = changeSliderWidth();
