@@ -417,11 +417,11 @@ footer {
 	padding: 20px;
 }
 
-footer i {
+footer img {
 	padding: 20px;
 	transition: 0.5s;
 }
 
-footer i:hover {
+footer img:hover {
 	transform: scale(1.3); 
 }
