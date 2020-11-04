@@ -45,6 +45,8 @@ header {
 	.intro {
 		max-width: 450px;
 		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
 	}
 }
 
@@ -77,6 +79,69 @@ li a {
 	text-align: center;
 	padding: 15px 17px;
 	text-transform: uppercase;
+}
+
+.left-float {
+	float: left;
+}
+
+.menu-icon {
+	display: none;
+	color: var(--white);
+}
+
+.sidepanel  {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--green);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: color(--white);
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	li {
+		float: none;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.menu-icon {
+		display: inline;
+		padding: 15px 17px;
+		cursor: pointer;
+	}
 }
 
 .about-grid {
@@ -293,13 +358,6 @@ li a {
 		width: 70vw;
 		height: auto;
 	}
-
-	img {
-  		margin-left: auto;
- 	 	margin-right: auto;
-		width: 70vw;
-		height: auto;
-	}
 }
 
 #skills {
@@ -318,7 +376,7 @@ li a {
 .skill-stars {
 	display: flex;
 	flex-direction: row;
-	padding-right: 80px;
+	padding: 0 40px;
 }
 
 .skill {
@@ -338,7 +396,7 @@ li a {
 
 @media screen and (max-width: 800px) {
 	#skills {
-		padding: 30px;
+		padding: 50px 30px;
 	}
 
 	.skill-stars {

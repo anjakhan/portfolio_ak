@@ -42,32 +42,10 @@ function showDivs(divObject, n) {
   divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
 }
 
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "100vw";
+}
 
-// let img = document.querySelectorAll('img');
-
-// function changeImgWidth() {
-//   img.forEach(image => {
-//     if (window.innerWidth < 800) {
-//       let project = document.querySelector('.project');
-//       let imgWidth = project.clientWidth*0.85;
-//       image.width = imgWidth
-//       console.log(image.width, imgWidth)
-//     }
-//   })
-// }
-
-// let slideContainer = document.querySelectorAll('.slideshow-container')
-
-// function changeSliderWidth() {
-//   slideContainer.forEach(slider => {
-//     if (window.innerWidth < 800) {
-//       let project = document.querySelector('.project');
-//       let imgWidth = project.clientWidth*0.85;
-//       slider.width = imgWidth
-//       console.log(slider.width, imgWidth)
-//     }
-//   })
-// }
-
-// document.querySelector('.project').addEventListener('change', changeImgWidth);
-// window.onload = changeSliderWidth();
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}

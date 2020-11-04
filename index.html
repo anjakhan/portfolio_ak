@@ -31,12 +31,21 @@
 	</header>
 	
 	<ul>
-		<li style="float: left;"><a href="https://gatsbyblog-by-anjakhan.netlify.app/" target="_blank">Blog</a></li>
-	 	<li><a href='#contact'>contact</a></li>
-	 	<li><a href='#skills'>skills</a></li>
-	 	<li><a href='#work'>my work</a></li>
-	 	<li><a href='#about'>about</a></li>
+		<li class="left-float"><a href="https://gatsbyblog-by-anjakhan.netlify.app/" target="_blank">Blog</a></li>
+	 	<li class="hidden"><a href='#contact'>contact</a></li>
+	 	<li class="hidden"><a href='#skills'>skills</a></li>
+	 	<li class="hidden"><a href='#work'>my work</a></li>
+	 	<li class="hidden"><a href='#about'>about</a></li>
+	 	<li class="menu-icon" onclick="openNav()"><i class="fa fa-bars"></i></li>
 	</ul>
+
+	<div id="mySidepanel" class="sidepanel">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="#about" onclick="closeNav()">about</a>
+		<a href="#work" onclick="closeNav()">my work</a>
+		<a href="#skills" onclick="closeNav()">skills</a>
+		<a href="#contact" onclick="closeNav()">contact</a>
+	</div>
 	
 	<div id='about' class='about-grid'>
 		<div class='profile-pic'></div>
